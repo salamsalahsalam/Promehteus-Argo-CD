@@ -1,0 +1,167 @@
+global:global:
+  scrape_interval: 1m
+
+serverFiles:
+  prometheus.yml:
+    scrape_configs:
+      - job_name: 'ledger-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - ledger
+  
+      - job_name: 'identity-management-proxy-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - identity-management-proxy
+  
+      - job_name: 'booking-management-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - booking-management
+  
+      - job_name: 'citation-manager-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - citation-manager
+  
+      - job_name: 'background-client-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - background-client 
+  
+      - job_name: 'service-template-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - service-template   
+  
+      - job_name: 'integrations-acl-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - integrations-acl
+  
+      - job_name: 'notifications-manager-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - notifications-manager
+  
+      - job_name: 'zones-management-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - zones-management    
+  
+      - job_name: 'lpr-gateway-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - lpr-gateway 
+  
+      - job_name: 'internal-gateway-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - internal-gateway   
+   
+      - job_name: 'idp-gateway-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - idp-gateway   
+   
+      - job_name: 'remat-gateway-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - remat-gateway
+  
+      - job_name: 'admin-gateway-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - admin-gateway 
+  
+      - job_name: 'mobile-gateway-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - mobile-gateway  
+  
+      - job_name: 'audit-service-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - audit-service
+  
+      - job_name: 'towing-management-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - towing-management
+  
+      - job_name: 'site-management-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - site-management
+  
+      - job_name: 'shift-management-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - shift-management
+
+      - job_name: 'kiosk-acl-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - kiosk-acl
+
+      - job_name: 'lpr-acl-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - lpr-acl
+
+      - job_name: 'remat-acl-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - remat-acl
+
+      - job_name: 'signage-acl-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - signage-acl
+
+      - job_name: 'sms-acl-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - sms-acl
+
+      - job_name: 'occupancy-management-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - occupancy-management
+
+      - job_name: 'active-ticket-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - active-ticket
+
+      - job_name: 'avidbeam-acl-job'
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+            - avidbeam-acl       
